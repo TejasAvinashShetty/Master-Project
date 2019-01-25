@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{booktabs}
+\usepackage{physics}
+\usepackage{url}
+\usepackage{braket}
+%\usepackage{mandi}
+\usepackage{verbatim} % for comment environment : bug finding
+\begin{document}
+\title{Master Project}
+\author{Tejas Shetty}
+%\address{221B, Baker Street, London, UK}
+\date{\today} % or can be any other day
+\maketitle
+One convenient way to set this up if you're planning to use the same files across mulitple projects is to organize things as follows:
+
+Create a “master” project containing your common files e.g. .bib, .cls, .sty, graphics, etc.
+In your “child” projects, click the “Add file” button at the top of the project side bar.
+Select “File from other project”, and navigate to your “master” project, and select the file that you need.
+You will now be able to used the linked file in your “child” project.
+
+If you’ve modified the original copy of the files in the “master” project, remember to right-click on the linked .bib in the “child” projects and then “Refresh” (or click on the file and click on the Refresh button in the file preview that appears), to pull in the changes.
+
+\url{https://www.overleaf.com/help/226-can-i-share-files\\
+-e-dot-g-bib-and-some-graphics-across-my-projects#.W5qHGd0zbCI}\\
+(Type your content here.)
+
+
+
+@article{lindblad1976g,
+  title={G. Lindblad, Commun. Math. Phys. 48, 119 (1976).},
+  author={Lindblad, G{\"o}ran},
+  journal={Commun. Math. Phys.},
+  volume={48},
+  pages={119},
+  year={1976}
+} \\
+
+@incollection{haroche1985radiative,
+  title={Radiative properties of Rydberg states in resonant cavities},
+  author={Haroche, S and Raimond, JM},
+  booktitle={Advances in atomic and molecular physics},
+  volume={20},
+  pages={347--411},
+  year={1985},
+  publisher={Elsevier}
+}
+\end{document}
