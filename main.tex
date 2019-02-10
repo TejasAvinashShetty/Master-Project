@@ -4,6 +4,7 @@
 \usepackage{physics}
 \usepackage{url}
 \usepackage{braket}
+\usepackage{natbib}
 %\usepackage{mandi}
 \usepackage{verbatim} % for comment environment : bug finding
 \begin{document}
@@ -12,7 +13,7 @@
 %\address{221B, Baker Street, London, UK}
 \date{\today} % or can be any other day
 \maketitle
-One convenient way to set this up if you're planning to use the same files across mulitple projects is to organize things as follows:
+One convenient way to set this up if you're planning to use the same files across multiple projects is to organize things as follows:
 
 Create a “master” project containing your common files e.g. .bib, .cls, .sty, graphics, etc.
 In your “child” projects, click the “Add file” button at the top of the project side bar.
@@ -20,29 +21,143 @@ Select “File from other project”, and navigate to your “master” project,
 You will now be able to used the linked file in your “child” project.
 
 If you’ve modified the original copy of the files in the “master” project, remember to right-click on the linked .bib in the “child” projects and then “Refresh” (or click on the file and click on the Refresh button in the file preview that appears), to pull in the changes.
-
-\url{https://www.overleaf.com/help/226-can-i-share-files\\
--e-dot-g-bib-and-some-graphics-across-my-projects#.W5qHGd0zbCI}\\
+\cite{maday2003new}
+%\url
+{https://www.overleaf.com/help/226-can-i-share-files\\
+-e-dot-g-bib-and-some-graphics-across-my-projects.W5qHGd0zbCI}\\
 (Type your content here.)
 
 
 
-@article{lindblad1976g,
-  title={G. Lindblad, Commun. Math. Phys. 48, 119 (1976).},
-  author={Lindblad, G{\"o}ran},
-  journal={Commun. Math. Phys.},
-  volume={48},
-  pages={119},
-  year={1976}
-} \\
 
-@incollection{haroche1985radiative,
-  title={Radiative properties of Rydberg states in resonant cavities},
-  author={Haroche, S and Raimond, JM},
-  booktitle={Advances in atomic and molecular physics},
-  volume={20},
-  pages={347--411},
-  year={1985},
-  publisher={Elsevier}
-}
+\begin{table}[!ht]
+\centering
+\begin{tabular}{l|l}
+Known Name & Bib label \\\hline
+petta & petta \\
+Zhu and Rabitz & zhu1998rapid\\
+Manday and Tutinici & maday2003new\\
+Grape Khaneja & khaneja2005optimal\\
+GOAT & machnes2015gradient\\
+CRAB & doria,caneva2011chopped\\
+DCRAB & rachnes2015dressing\\
+hotgates & hot gates\\
+tannor(krotov) & tannor1992control\\
+lindblad & lindblad1976g\\
+suri thermal & 2018EPJST.227..203S
+\end{tabular}
+\caption{\label{tab:Important  Biblabel}Important  Biblabel}
+\end{table}
+
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{l|l}
+Known Name & Bib label \\\hline
+hotgates & hot gates\\
+gerry & gerry2005introductory\\
+traxler & traxler2009decoherence\\
+bertlmann & bertlmann2008theoretical\\
+sakurai & sakurai1995modern
+
+
+
+\end{tabular}
+\caption{\label{tab:less Important  Biblabel}less Important  Biblabel.}
+\end{table}
+%% citations available
+\nocite{petta}
+\nocite{lindblad1976g}
+\nocite{hot_gates}
+\nocite{2018EPJST.227..203S}
+\nocite{maday2003new}
+\nocite{tannor1992control}
+\nocite{zhu1998rapid}
+\nocite{khaneja2005optimal}
+\nocite{caneva2011chopped}
+\nocite{doria}
+\nocite{machnes2015gradient}
+\nocite{2012JChPh.136j4103R}
+\nocite{Whatisqubit}
+\nocite{nielsen2004quantum}
+\nocite{wiki:resonator}
+\nocite{Tejas_APS1}
+\nocite{gerry2005introductory}
+\nocite{traxler2009decoherence}
+\nocite{bertlmann2008theoretical}
+\nocite{sakurai1995modern}
+\nocite{churchill1990complex}
+\nocite{breuer2002}
+\nocite{percival1998}
+\nocite{PaolaMIT2012}
+\nocite{2006quant.ph.12095L}
+\nocite{jcreviewshoreknight}
+\nocite{larson2007dynamics}
+\nocite{cambridgestate}
+\nocite{jaynes1963comparison}
+\nocite{cummings1962comparison}
+\nocite{wichterich2007modeling}
+\nocite{aravind1984two}
+\nocite{haroche1985radiative}
+\nocite{yoo1985dynamical}
+\nocite{barnett1985thermofield}
+\nocite{barnett1986dissipation}
+\nocite{meystre2013elements}
+\nocite{kien1991interaction}
+\nocite{hinds1991advances}
+\nocite{meystre1992v}
+\nocite{filipovicz1985rydberg}
+\nocite{knight1986quantum}
+\nocite{meschede1985one}
+\nocite{rempe1986one}
+\nocite{brune1987realization}
+\nocite{horoche1989cavity}
+\nocite{gorini1976completely}
+\nocite{brasil2011}
+\nocite{brasil2011protecting}
+\nocite{nielsen2003computaccao}
+\nocite{caldeira1983caldeira}
+\nocite{davies1976quantum}
+\nocite{alicki2007general}
+\nocite{adler2000derivation}
+\nocite{adler2000corrigendum}
+\nocite{peres2000classical}
+\nocite{mechnics1977claude}
+\nocite{schleich2001quantum}
+\nocite{rach2015dressing}
+\nocite{d2007introduction}
+\nocite{Batzri1973}
+\nocite{Sackmann1995a}
+\nocite{Boal2012}
+\nocite{Smith99} %Douglas E Smith
+%\nocite{Smith99HOM} %not found
+\nocite{SunHI03}
+\nocite{luding94}
+\nocite{rich-mart92}
+\nocite{einstein}
+\nocite{latexcompanion}
+\nocite{knuthwebsite}
+\nocite{qutip2}
+\nocite{qutip1}
+\nocite{}
+\nocite{}
+\nocite{}
+\nocite{}
+\nocite{}
+\nocite{}
+\nocite{}
+\nocite{}
+%%%%%%%%
+\bibliographystyle{unsrt} %stylename
+\bibliography{mylit} %.bib file name
+
+%%%%%%%%
+%\begin{thebibliography}{}
+%\bibitem{}
+%Sets the bibliography style to iitbauthyr and imports the 
+%bibliography file "mylit.bib".
+%\bibliographystyle{iitbauthyr} %stylename
+%\bibliography{mylit} %.bib file name 
+%\end{thebibliography}
+%\end{bib}
 \end{document}
