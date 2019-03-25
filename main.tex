@@ -27,10 +27,20 @@ If you’ve modified the original copy of the files in the “master” project,
 -e-dot-g-bib-and-some-graphics-across-my-projects.W5qHGd0zbCI}\\
 %(Type your content here.)
 
+\section{How to use/ maintain}
+\subsection{Use}
+Whenever you need to include a reference in your article, go to mylit.bib. Press command + F or Ctrl + F to find the article corresponding to your search string. If found copy the bib label. In your project refresh mylit.bib and use it in the cite command.    
+\par
+If this fails see the reference list in the PDF of this project and see if you hit upon anything. (You may download it and do the same press command + F or Ctrl + F thing). Then see the reference no and note it down.  Add 200 to this no and call it cite no. Go to the line corresponding to the cite no on the source of this file. Copy the biblabel from the argument of the nocite command on this file. 
+\subsection{Maintenance}
+Before adding search it in mylit.bib, etc as above to see if it already exists.
+To add a bibliographic entry to this project search it on  web (e.g google, etc ) and copy bibtex information  from  google scholar, semantic scholar, etc and paste it in mylit.bib. Secondly, one must add
+add the biblabel to the table. 
+\par
+The most important thing is to add it to the nocite collection at the end. Also fix errors as soon as they apppear.
 
-
-
-\begin{table}[!ht]
+\section{Biblabels}
+\begin{table}[ht]
 \centering
 \begin{tabular}{l|l}
 Known Name & Bib label \\\hline
@@ -49,83 +59,44 @@ suri thermal & 2018EPJST.227..203S
 \caption{\label{tab:Important  Biblabel}Important  Biblabel}
 \end{table}
 
-\newpage
-\begin{table}[!ht]\label{tab:less Important  Biblabel}
-\centering
-\begin{tabular}{l|l}
-Known Name & Bib label \\\hline
-hotgates & hot-gates\\
-gerry & gerry2005introductory\\
-traxler & traxler2009decoherence\\
-bertlmann & bertlmann2008theoretical\\
-sakurai & sakurai1995modern\\
-churchill & churchill1990complex\\
-breuer & breuer2002\\
-Paola & PaolaMIT2012\\
-2006quant.ph  & 2006quant.ph.12095L\\
-Jcreviewshore &  jcreviewshoreknight\\
-larson  & larson2007dynamics\\
-cambridgestate  & cambridgestate\\
-jaynes1963 & jaynes1963comparison\\
-cummings1962 & cummings1962comparison\\
-wichterich  & wichterich2007modeling\\
-Aravind & aravind1984two\\
-haroche  & haroche1985radiative\\
-yoo  & yoo1985dynamical\\
-barnett1985 & barnett1985thermofield\\
-barnett1986 & barnett1986dissipation\\
-meystre2013 & meystre2013elements\\
-kien  & kien1991interaction\\
-hinds  & hinds1991advances\\
-meystre  & meystre1992v\\
-filipovicz  & filipovicz1985rydberg\\
-knight  & knight1986quantum\\
-meschede  & meschede1985one\\
-rempe1986 & rempe1986one\\
-brune  & brune1987realization\\
-horoche  & horoche1989cavity\\
-gorini  & gorini1976completely\\
-brasil  & brasil2011\\
-brasilp & brasil2011protecting\\
-nielsen2003 & nielsen2003computaccao
-\end{tabular}
-\caption{less Important  Biblabel 1}
-\end{table} 
-\newpage
-\begin{table}[h]
-    \centering
-    \begin{tabular}{c|c}
-     Known Name & Bib label \\\hline
-     caldeira1983 & caldeira1983caldeira\\
-    davies  & davies1976quantum\\
-    alicki  & alicki2007general\\
-    adler  & adler2000derivation\\
-    adlerc & adler2000corrigendum\\
-    peres2000 & peres2000classical\\
-    mechnics  & mechnics1977claude\\
-    schleich  & schleich2001quantum\\
-    rach2015 & rach2015dressing\\
-    d2007 & d2007introduction\\
-    Batzri  & Batzri1973\\
-    Sackmann  & Sackmann1995a\\
-    Boal  & Boal2012\\
-    SunH & SunHI03\\
-    Ludin & luding94\\
-    rich  & rich-mart92\\
-    Einstein & einstein\\
-    Latexcompanio & latexcompanion\\
-    Knuthwebsite & knuthwebsite\\
-    qutip2 & qutip2\\
-    qutip1 & qutip1   
-    \end{tabular}
-    \caption{less important biblabel 2}
-    \label{tab:less important biblabel 2}
-\end{table}
 
 
-\newpage
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage 
 %% citations available
 \nocite{petta}
 \nocite{lindblad1976g}
@@ -200,6 +171,7 @@ nielsen2003 & nielsen2003computaccao
 \nocite{knuthwebsite}
 \nocite{qutip2}
 \nocite{qutip1}
+\nocite{2019arXiv190205779H}
 \nocite{}
 \nocite{}
 \nocite{}
@@ -207,7 +179,88 @@ nielsen2003 & nielsen2003computaccao
 \nocite{}
 \nocite{}
 \nocite{}
-\nocite{}
+
+
+
+\begin{table}[ht]\label{tab:less Important  Biblabel}
+\centering
+\begin{tabular}{l|l}
+Known Name & Bib label \\\hline
+hotgates & hot-gates\\
+gerry & gerry2005introductory\\
+traxler & traxler2009decoherence\\
+bertlmann & bertlmann2008theoretical\\
+sakurai & sakurai1995modern\\
+churchill & churchill1990complex\\
+breuer & breuer2002\\
+Paola & PaolaMIT2012\\
+2006quant.ph  & 2006quant.ph.12095L\\
+Jcreviewshore &  jcreviewshoreknight\\
+larson  & larson2007dynamics\\
+cambridgestate  & cambridgestate\\
+jaynes1963 & jaynes1963comparison\\
+cummings1962 & cummings1962comparison\\
+wichterich  & wichterich2007modeling\\
+Aravind & aravind1984two\\
+haroche  & haroche1985radiative\\
+yoo  & yoo1985dynamical\\
+barnett1985 & barnett1985thermofield\\
+barnett1986 & barnett1986dissipation\\
+meystre2013 & meystre2013elements\\
+kien  & kien1991interaction\\
+hinds  & hinds1991advances\\
+meystre  & meystre1992v\\
+filipovicz  & filipovicz1985rydberg\\
+knight  & knight1986quantum\\
+meschede  & meschede1985one\\
+rempe1986 & rempe1986one\\
+brune  & brune1987realization\\
+horoche  & horoche1989cavity\\
+gorini  & gorini1976completely\\
+brasil  & brasil2011\\
+brasilp & brasil2011protecting\\
+nielsen2003 & nielsen2003computaccao
+\end{tabular}
+\caption{less Important  Biblabel 1}
+\end{table} 
+\newpage
+
+
+\newpage
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{c|c}
+     Known Name & Bib label \\\hline
+     caldeira1983 & caldeira1983caldeira\\
+     davies  & davies1976quantum\\
+     alicki  & alicki2007general\\
+     adler  & adler2000derivation\\
+     adlerc & adler2000corrigendum\\
+     peres2000 & peres2000classical\\
+    mechnics  & mechnics1977claude\\
+    schleich  & schleich2001quantum\\
+    rach2015 & rach2015dressing\\
+    d2007 & d2007introduction\\
+    Batzri  & Batzri1973\\
+    Sackmann  & Sackmann1995a\\
+    Boal  & Boal2012\\
+    SunH & SunHI03\\
+    Ludin & luding94\\
+    rich  & rich-mart92\\
+    Einstein & einstein\\
+    Latexcompanio & latexcompanion\\
+    Knuthwebsite & knuthwebsite\\
+    qutip2 & qutip2\\
+    qutip1 & qutip1 \\
+    2019arXiv190205779H & 2019arXiv190205779H
+    \end{tabular}
+    \caption{less important biblabel 2}
+    \label{tab:less important biblabel 2}
+\end{table}
+\newpage
+
+
+
 %%%%%%%%
 \bibliographystyle{unsrt} %stylename
 \bibliography{mylit} %.bib file name
